@@ -1,7 +1,7 @@
 FROM openjdk:11-slim
 RUN apt update && apt install -y wget
 
-ENV KARAF_VERSION=4.2.3
+ENV KARAF_VERSION=4.2.9
 
 RUN wget http://www-us.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz && \
     mkdir /opt/karaf && \
